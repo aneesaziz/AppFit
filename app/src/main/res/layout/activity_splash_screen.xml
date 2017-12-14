@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EC407A"
+    tools:context="com.aziz.anees.appfit.SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Appfit"
+            android:textSize="40dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#E91E63"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="A simple pedometer app for your daily routine"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/walk"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="The purpose of this app is to help people track their number of steps walked."
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Go To App"
+            android:layout_gravity="center"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/bg_button1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:id="@+id/gotoMain"
+            android:onClick="gotoMain"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Disclaimer:The accuracy of this app depends on your phone's hardware."
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            />
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-5523787502380809/8937084978">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+
+</ScrollView>

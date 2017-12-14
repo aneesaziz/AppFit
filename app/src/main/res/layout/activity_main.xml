@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.aziz.anees.appfit.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EC407A">
+    <TextView
+        android:background="#EC407A"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Steps:0"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:id="@+id/steps"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+        <TextView
+            android:background="#EC407A"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Distance(m):0"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/curdistance"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Reset"
+            android:textSize="28dp"
+            android:layout_gravity="center"
+            android:id="@+id/reset"
+            android:background="@drawable/bg_button1"
+          android:layout_margin="10dp"
+            android:padding="10dp"
+            />
+        <Button
+            android:textColor="#FFFFFF"
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Start"
+            android:textSize="30dp"
+            android:background="@drawable/bg_button1"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="0%"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:layout_margin="2dp"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <ProgressBar
+        android:layout_gravity="left"
+        android:id="@+id/circularProgressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="100"
+        />
+
+
+  </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/dailygoaltext"
+        android:text="100"
+        android:textSize="24dp"
+        android:background="@drawable/roundedbutton"
+        android:layout_margin="5dp"
+        android:digits="0,1,2,3,4,5,6,7,8,9"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:maxLength="7"
+        />
+    <TextView
+    android:layout_width="70dp"
+    android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="metres"
+    android:textColor="#FFFFFF"
+    android:textSize="20dp" />
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Set Goal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:id="@+id/setgoal"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_button1"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:background="#EC407A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+          <TextView
+                android:background="#EC407A"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="My Profile"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:gravity="left|center"
+                android:textColor="#FFFFFF"
+                android:textSize="35dp"
+                android:id="@+id/profiletext"
+                android:layout_marginLeft="5dp"
+                />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:background="#EC407A"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text=" Total Distance Ran:0"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:gravity="left|center"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:id="@+id/prev"
+            android:layout_marginLeft="5dp"
+            />
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#EC407A"
+            android:gravity="left|center">
+            <TextView
+                android:background="#EC407A"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="Weight:"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:gravity="left|center"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:id="@+id/weighttext"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/weight"
+                android:text=""
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="25dp"
+                android:digits="0,1,2,3,4,5,6,7,8,9"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:maxLength="3"
+                android:background="@drawable/roundedbutton"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Save"
+                android:layout_gravity="center"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/bg_button"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:id="@+id/save"
+                android:layout_marginLeft="25dp"
+                android:padding="0dp"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Total Calories Burnt:0 "
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:gravity="left|center"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:id="@+id/calories"
+            android:layout_marginLeft="5dp"
+            android:padding="4dp"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Reset All"
+            android:layout_gravity="left|center"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/bg_button1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:id="@+id/resetAll"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="No user data will be shared with other apps"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:gravity="left|center"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:padding="4dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
